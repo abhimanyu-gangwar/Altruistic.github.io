@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    cursor: default;
 }
-.banner{
+body{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
     background-size: cover;
     background-position: center;
+    display: grid;
+    
 }
 .navbar{
     width: 100%;
@@ -16,6 +19,8 @@
     padding: 35px 0;
     display: flex;
     align-items: center;
+    margin-top: 0%;
+    position: relative;
     justify-content: space-between;
 }
 .navbar li{
@@ -43,12 +48,14 @@
     width: 100%;
 }
 .content{
-    width: 100%;
-    position: absolute;
-    top: 50%;
+    width: 80%;
+    top: 35%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
+    position: relative;
+    margin: auto;
+    top: 11% ;
 }
 .content h1{
     font-size: 70px;
@@ -95,8 +102,10 @@ button:hover span{
     margin-top: 35vh;
     font-size: large;
 }
-/*.services-menu li{
-    display: block;
+ /* .services-menu li{
+    display: block; 
+    z-index: -1; 
+    background-color: #009688;
 }
 .services-menu{
     width: 100%;
@@ -105,18 +114,20 @@ button:hover span{
     z-index: 999;
     display: none;
     height: 100px;
-   
-}
-.navbar li :hover .services-menu { 
+    
+} */
+.navbar li:hover ::after .services-menu { 
     display: block;
-    position: absolute;
-}   */
+    /* position: relative; */
+    width: 100%;
+    height: 100px;
+}  
 /* ----------------------------------------------------------contact us page style------------------------------------------------------------------*/
 .contact-content{
     color: #fff;
     width: 100%;
     text-align: center;
-    
+    position: relative;
 }
 .contact-content h1{
     margin-bottom: 10px;
@@ -128,14 +139,15 @@ button:hover span{
 }
 .contact-information{
     color: #fff;
-    width: 80%;
+    width: 84%;
     background-color: rgba(59, 55, 55, 0.75);
     opacity: 0.75;
     display: flex;
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    height: 60vh;
+    top: -4%;
+    justify-content: center;
+    margin: auto;
+    height: 92%;
+    position: relative;
 }
 .left{
     flex-basis: 60%;
@@ -183,11 +195,13 @@ textarea{
     width: 11%;
     justify-content: space-between;
     display: flex;
-    position: absolute;
     height: 5%;
-    top: 90%;
-    margin-left: 19%;
+    top: 85%;
+    margin: auto;
     padding-top: 10px;
+}
+.social a{
+    margin: 0px 25px;
 }
 i{
     color: #009688;
@@ -217,27 +231,28 @@ text-align: left;
     display: grid;
     justify-content: center;
     font-size: 25px;
-    margin-top: 2.5%;
+    margin-top: -8%;
+    position: relative;
 } 
 .underline{
     width: 45%;
-    height: 20%;
-    margin-top: -8px;
+    height: 30%;
+    margin-top: 5%;
     margin-left: 27.5%;
     background-color: #fff;  
 }
 .about-content{
     width: 85%;
-    height: 45%;
+    height: 108%;
     margin-left: 7.5%;
     background-color: rgba(59, 55, 55, 0.75);
     opacity: 0.75;
     color: #fff;
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: space-around;
-    padding-top: 30px;
-    margin-top: 30px;
+    padding-top: 2%;
+    margin-top: -8%;
 } 
 .about-content h3{
     font-size: 30px;
@@ -284,10 +299,91 @@ text-align: left;
     text-align: center;   
 }
 .copyright{
-    color: rgb(133 133 133 / 75%);
+    color: rgba(96, 83, 83, 0.75);
     position: absolute;
     width: 100%;
     text-align: center;
     top: 97.2%;
 
 }
+@media (min-width: 1024px) and (max-width: 1440px){
+    .contact-content{
+        top: -6%;
+        
+    }
+    .contact-information{
+        font-size: 14px;
+    }
+    .contact-content h1{
+        font-size: 40px;
+    }
+    .contact-content p{
+        font-size: 17px;
+    }
+    .about-content h3{
+        font-size: 24px;
+    }
+    .about-content p{
+        font-size: 14.5px;
+    }
+    .about-heading{
+        font-size: 23px;
+    }
+} 
+@media (min-width: 768px) and (max-width: 1024px){
+    .contact-content{
+        top: -6%;
+        
+    }
+    .contact-information{
+        font-size: 12px;
+    }
+    .contact-content h1{
+        font-size: 40px;
+    }
+    .contact-content p{
+        font-size: 17px;
+    }
+    .about-content h3{
+        font-size: 23.5px;
+    }
+    .about-content p{
+        font-size: 13px;
+    }
+    .about-heading{
+        font-size: 23px;
+    }
+    #work-icon {
+        font-size: 46px;
+    }
+    #why-icon {
+        font-size: 46px;
+    }
+    #mission-icon {
+        font-size: 46px;
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    /* .content{
+        margin: auto;
+        top: 11% ;
+    }
+     */
+
+    
+} 
+@media (min-width: 300px) and (max-width: 500px){
+
+    
+    
+} 
+@media (min-width: 300px) and (max-width: 500px){
+
+    
+    
+} 
+
