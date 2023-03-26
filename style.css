@@ -296,6 +296,7 @@ text-align: left;
     top: 97.2%;
 
 }
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (min-width: 1024px) and (max-width: 1440px){
     .contact-content{
         top: -6%;
@@ -319,7 +320,8 @@ text-align: left;
     .about-heading{
         font-size: 23px;
     }
-} 
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------  */
 @media (min-width: 768px) and (max-width: 1024px){
     .contact-content{
         top: -6%;
@@ -363,6 +365,7 @@ text-align: left;
     }
     
 } 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
 @media (min-width: 500px) and (max-width: 768px){
     .contact-body{
         height: 145vh;
@@ -440,6 +443,7 @@ text-align: left;
 
     }
 } 
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (min-width: 300px) and (max-width: 500px){
 
     .navbar{
@@ -457,13 +461,13 @@ text-align: left;
         height: 145vh;
     }
     .contact-content{
-        top: -6%;
+        top: 28%;
         
     }
     .contact-information{
         font-size: 12px;
         display: grid;
-        height: 96%;
+        height: 91.5%;
     }
     .contact-content h1{
         font-size: 40px;
@@ -492,7 +496,7 @@ text-align: left;
         padding: 5% 2%;
     }
     .about-body{
-        height: 140vh;
+        height: 120vh;
     }
     .about-content h3{
         font-size: 23.5px;
@@ -501,16 +505,18 @@ text-align: left;
         font-size: 13px;
     }
     .about-heading{
-        font-size: 23px;
+        font-size: 20px;
+        margin-top: 0%;
+        top: -7%;
     }
     #work-icon {
-        font-size: 46px;
+        font-size: 43px;
     }
     #why-icon {
-        font-size: 46px;
+        font-size: 43px;
     }
     #mission-icon {
-        font-size: 46px;
+        font-size: 43px;
     }
     .content{
         top: 25%;
