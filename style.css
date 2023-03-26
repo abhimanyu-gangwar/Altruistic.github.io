@@ -212,6 +212,7 @@ a{
     color: #fff;
     outline: none;
     text-decoration: none;
+    cursor: pointer;
 }
 .reachus-info{
 width: 100%;
@@ -234,16 +235,16 @@ text-align: left;
     margin-top: -8%;
     position: relative;
 } 
-.underline{
+.about-underline{
     width: 45%;
     height: 30%;
     margin-top: 5%;
     margin-left: 27.5%;
-    background-color: #fff;  
-}
+    background-color:#fff; 
+}   
 .about-content{
     width: 85%;
-    height: 108%;
+    height: 90%;
     margin-left: 7.5%;
     background-color: rgba(59, 55, 55, 0.75);
     opacity: 0.75;
@@ -258,11 +259,10 @@ text-align: left;
     font-size: 30px;
     text-align: center;
 }
-.how-we-work p{
-   margin-top: 7%; 
-   font-size: 17px;
-   text-align: center;
-
+.about-content p{
+    margin-top: 10.5%; 
+    font-size: 17px;
+    text-align: center;
 }
 #work-icon{
     color: #fff;
@@ -287,16 +287,6 @@ text-align: left;
     height: 18%;
     text-align: center;
     margin-bottom: 10px;   
-}
-.why-us p{
-    margin-top: 7%; 
-    font-size: 17px;
-    text-align: center;
-}
-.mission p{
-    margin-top: 7%; 
-    font-size: 17px;
-    text-align: center;   
 }
 .copyright{
     color: rgba(96, 83, 83, 0.75);
@@ -344,6 +334,9 @@ text-align: left;
     .contact-content p{
         font-size: 17px;
     }
+    .about-content{
+        height: 85%;
+    }
     .about-content h3{
         font-size: 23.5px;
     }
@@ -363,27 +356,171 @@ text-align: left;
         font-size: 46px;
     }
     .content h1{
-        font-size: 60px;
+        font-size: 58px;
     }
     .content p{
-        font-size: 14px;
+        font-size: 13px;
     }
-    /* .content{
+    
+} 
+@media (min-width: 500px) and (max-width: 768px){
+    .contact-body{
+        height: 145vh;
+    }
+    .contact-content{
+        top: -6%;
+        
+    }
+    .contact-information{
+        font-size: 12px;
+        display: grid;
+        height: 96%;
+    }
+    .contact-content h1{
+        font-size: 40px;
+    }
+    .contact-content p{
+        font-size: 17px;
+    }
+    .reachus-info{
+        padding: 40px 0px 30px 0px;
+    }
+    .left{
+        padding: 30px 40px;
+    }
+    .right{
+        margin-top: 5%;
+    }
+    .social{
+        justify-content: center;
+    }
+    .about-content{
+        height: 90%;
+        width: 55%;
+        display: grid;
         margin: auto;
-        top: 11% ;
+        margin-top: -8%;
+        padding: 5% 2%;
     }
-     */
+    .about-body{
+        height: 140vh;
+    }
+    .about-content h3{
+        font-size: 23.5px;
+    }
+    .about-content p{
+        font-size: 13px;
+    }
+    .about-heading{
+        font-size: 23px;
+    }
+    #work-icon {
+        font-size: 46px;
+    }
+    #why-icon {
+        font-size: 46px;
+    }
+    #mission-icon {
+        font-size: 46px;
+    }
+    .content{
+        top: 11%;
+    }
+    .content h1{
+        font-size: 50px;
+    }
+    .content p{
+        font-size: 11px;
+    }
+    .button{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
 
-    
+    }
 } 
 @media (min-width: 300px) and (max-width: 500px){
 
-    
-    
-} 
-@media (min-width: 300px) and (max-width: 500px){
-
-    
+    .navbar{
+        padding: 15px 0px;
+        font-size: 10px;
+    }
+    .navbar li{
+        margin: 0px 10px;
+    }
+    .button{
+        display: grid;
+        justify-content: center;
+    }
+    .contact-body{
+        height: 145vh;
+    }
+    .contact-content{
+        top: -6%;
+        
+    }
+    .contact-information{
+        font-size: 12px;
+        display: grid;
+        height: 96%;
+    }
+    .contact-content h1{
+        font-size: 40px;
+    }
+    .contact-content p{
+        font-size: 17px;
+    }
+    .reachus-info{
+        padding: 40px 0px 30px 0px;
+    }
+    .left{
+        padding: 30px 40px;
+    }
+    .right{
+        margin-top: 5%;
+    }
+    .social{
+        justify-content: center;
+    }
+    .about-content{
+        height: 90%;
+        width: 55%;
+        display: grid;
+        margin: auto;
+        margin-top: -8%;
+        padding: 5% 2%;
+    }
+    .about-body{
+        height: 140vh;
+    }
+    .about-content h3{
+        font-size: 23.5px;
+    }
+    .about-content p{
+        font-size: 13px;
+    }
+    .about-heading{
+        font-size: 23px;
+    }
+    #work-icon {
+        font-size: 46px;
+    }
+    #why-icon {
+        font-size: 46px;
+    }
+    #mission-icon {
+        font-size: 46px;
+    }
+    .content{
+        top: 25%;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .content p{
+        font-size: 10px;
+    }
     
 } 
 
